@@ -14,19 +14,19 @@ begin #可以美化輸出
 
 begin  #使用者輸入其中一個選項
 
-puts " Please choose one of the following: R / P / S"
-user_input = gets.chomp.upcase
+  puts " Please choose one of the following: R / P / S"
+  user_input = gets.chomp.upcase
 end while !["R" , "P" , "S"].include?(user_input)
   	
 
 # 接下來讓電腦亂數選出一個選項
 	
-	computer_input2 = ["R" , "P" , "S"]
-	computer_input = computer_input2.shuffle[1].upcase
-	puts " ================================================"
-	puts "  You choose #{user_input}"
-	puts "  Computer throw #{computer_input}"
-	puts " ================================================"
+  computer_input2 = ["R" , "P" , "S"]
+  computer_input = computer_input2.shuffle[1].upcase
+  puts " ================================================"
+  puts "  You choose #{user_input}"
+  puts "  Computer throw #{computer_input}"
+  puts " ================================================"
 
 
 # 比較兩個選項，決定誰贏誰輸
